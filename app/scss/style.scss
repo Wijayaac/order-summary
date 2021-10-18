@@ -64,7 +64,7 @@ main {
     flex-direction: row;
     align-items: center;
     padding: 15px 10px;
-    background-color: $paleBlue;
+    background-color: rgba($color: $paleBlue, $alpha: 0.4);
     border-radius: 5px;
     a {
       font-weight: 700;
@@ -91,4 +91,17 @@ main {
 .btn {
   display: block;
   text-align: center;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-weight: 900;
+  margin: 1rem 0;
+  &__success {
+    background-color: $brightBlue;
+    border-radius: 0.5rem;
+    color: $veryPaleBlue;
+    box-shadow: 0 15px 30px rgba($color: $desaturatedBlue, $alpha: 0.4);
+  }
+  &__cancle {
+    color: $desaturatedBlue;
+  }
 }
