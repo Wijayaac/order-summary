@@ -168,6 +168,7 @@ main {
   margin: 1rem 1rem;
   border-radius: 20px;
   background-color: #f5f7ff;
+  box-shadow: 5px 8px 16px rgba(114, 128, 167, 0.4), -5px 0 10px rgba(114, 128, 167, 0.4);
 }
 .card__header {
   background-image: url("/app/images/illustration-hero.svg");
@@ -182,7 +183,7 @@ main {
   width: 100%;
 }
 .card__body {
-  padding: 1rem;
+  padding: 18px 24px;
 }
 .card__text {
   text-align: center;
@@ -238,7 +239,7 @@ main {
   background-color: #3829e0;
   border-radius: 0.5rem;
   color: #f5f7ff;
-  box-shadow: 0 15px 30px rgba(114, 128, 167, 0.4);
+  box-shadow: 0 15px 30px rgba(114, 128, 167, 0.5);
 }
 .btn__cancle {
   color: #7280a7;
