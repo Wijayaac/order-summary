@@ -1,0 +1,94 @@
+@import "resset";
+@import "mixins";
+@import "colors";
+@import "fonts";
+
+body {
+  background-color: $paleBlue;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+}
+.img {
+  &__mobile {
+    width: 100%;
+  }
+}
+.order {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.card {
+  margin: 1rem 1rem;
+  border-radius: 20px;
+  background-color: $veryPaleBlue;
+  &__header {
+    background-image: url("/app/images/illustration-hero.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  &__image {
+    height: 160px;
+    width: 100%;
+  }
+  &__body {
+    padding: 1rem;
+  }
+  &__text {
+    text-align: center;
+    h1 {
+      font-weight: 900;
+      font-size: 1.625rem;
+      margin: 1.625rem 0;
+      color: $darkBlue;
+    }
+    p {
+      color: $desaturatedBlue;
+      line-height: 1.5;
+    }
+  }
+  &__tag {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: $paleBlue;
+    border-radius: 5px;
+    a {
+      font-weight: 700;
+      color: $brightBlue;
+    }
+  }
+  &__plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    h2 {
+      font-weight: 700;
+      color: $darkBlue;
+      margin: 5px 0;
+    }
+    p {
+      color: $desaturatedBlue;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  text-align: center;
+}
