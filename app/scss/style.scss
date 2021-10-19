@@ -26,7 +26,7 @@ main {
   transform: translate(-50%, -50%);
   @include breakpoint-up(medium) {
     margin-top: 0;
-    width: 400px;
+    width: 450px;
   }
 }
 
@@ -75,9 +75,14 @@ main {
     padding: 15px 10px;
     background-color: rgba($color: $paleBlue, $alpha: 0.4);
     border-radius: 5px;
+    margin: 24px 0;
     a {
       font-weight: 700;
       color: $brightBlue;
+      &:hover {
+        color: rgba($color: $brightBlue, $alpha: 0.5);
+        text-decoration: none;
+      }
     }
   }
   &__plan {
@@ -109,8 +114,14 @@ main {
     border-radius: 0.5rem;
     color: $veryPaleBlue;
     box-shadow: 0 15px 30px rgba($color: $desaturatedBlue, $alpha: 0.5);
+    &:hover {
+      background-color: rgba($color: $brightBlue, $alpha: 0.5);
+    }
   }
   &__cancle {
     color: $desaturatedBlue;
+    &:hover {
+      color: $darkBlue;
+    }
   }
 }

@@ -166,7 +166,7 @@ main {
 @media (min-width: 40em) {
   .order {
     margin-top: 0;
-    width: 400px;
+    width: 450px;
   }
 }
 
@@ -217,10 +217,15 @@ main {
   padding: 15px 10px;
   background-color: rgba(224, 232, 255, 0.4);
   border-radius: 5px;
+  margin: 24px 0;
 }
 .card__tag a {
   font-weight: 700;
   color: #3829e0;
+}
+.card__tag a:hover {
+  color: rgba(56, 41, 224, 0.5);
+  text-decoration: none;
 }
 .card__plan {
   display: flex;
@@ -252,8 +257,14 @@ main {
   color: #f5f7ff;
   box-shadow: 0 15px 30px rgba(114, 128, 167, 0.5);
 }
+.btn__success:hover {
+  background-color: rgba(56, 41, 224, 0.5);
+}
 .btn__cancle {
   color: #7280a7;
+}
+.btn__cancle:hover {
+  color: #1f2f56;
 }
 
 /*# sourceMappingURL=style.css.map */
