@@ -18,12 +18,16 @@ main {
   }
 }
 .order {
-  display: flex;
   position: absolute;
   top: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-top: -20px;
+  left: 50%;
+  width: 350px;
+  margin-top: 250px;
+  transform: translate(-50%, -50%);
+  @include breakpoint-up(medium) {
+    margin-top: 0;
+    width: 400px;
+  }
 }
 
 .card {
@@ -46,6 +50,9 @@ main {
   }
   &__body {
     padding: 18px 24px;
+    @include breakpoint-up(medium) {
+      padding: 20px 40px;
+    }
   }
   &__text {
     text-align: center;

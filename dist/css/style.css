@@ -156,12 +156,18 @@ main {
 }
 
 .order {
-  display: flex;
   position: absolute;
   top: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-top: -20px;
+  left: 50%;
+  width: 350px;
+  margin-top: 250px;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 40em) {
+  .order {
+    margin-top: 0;
+    width: 400px;
+  }
 }
 
 .card {
@@ -184,6 +190,11 @@ main {
 }
 .card__body {
   padding: 18px 24px;
+}
+@media (min-width: 40em) {
+  .card__body {
+    padding: 20px 40px;
+  }
 }
 .card__text {
   text-align: center;
